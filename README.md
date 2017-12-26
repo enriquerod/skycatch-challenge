@@ -57,7 +57,7 @@ NOTE: It is not necesary to train the model, there is already the necesary files
 
 ### Training
 
-Move to the folder of inetrest:
+Move to the folder of interest:
 ```
 cd models/research/object_detection
 ```
@@ -101,12 +101,13 @@ python3 export_inference_graph.py \
 It will save the frozen model ready for the testing step.
 
 ### Testing
-Move to the folder of inetrest:
+Move to the folder of interest:
 ```
 cd models/research/object_detection
 ```
 To test an image first put it in the test_image folder of the host system, it will copy the images inside this folder
-to the running container. 
+to the running container.
+
 NOTE: There are already 5 images inside test_image folder.
 ```
 python3 test_im.py --im_path test_images/image_name.jpg
@@ -157,10 +158,10 @@ Examples of the object detection, the model used was trained with the frozen inf
 ![alt tag](readme_im/test2.png)
 
 
-The whole training takes almost 5 hours to finish runing on gpu with the specifications of the system given in the "Getting Started" section.
+The whole training takes almost 5 hours to finish running on gpu with the specifications of the system given in the "Getting Started" section.
 
 ### Evaluation
-The performance was measure with the [Pascal 0.5 IoU metric](http://homepages.inf.ed.ac.uk/ckiw/postscript/ijcv_voc09.pdf) that is defined as an intersection-over-union greater than 0.5.
+The performance was measured with the [Pascal 0.5 IoU metric](http://homepages.inf.ed.ac.uk/ckiw/postscript/ijcv_voc09.pdf) that is defined as an intersection-over-union greater than 0.5.
 This [metric](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/evaluation_protocols.md) is already implemented on tensorflow.
 The performance for each class in the training process is given below:
 ![alt tag](readme_im/pascal.png)
