@@ -1,0 +1,13 @@
+numpy
+pandas
+opencv-python
+lxml
+xmldict
+pillow
+matplotlib
+scipy
+jupyter
+tensorflow-gpu
+html5lib==0.999999999
+
+
